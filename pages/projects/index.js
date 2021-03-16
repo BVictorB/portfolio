@@ -4,20 +4,33 @@ import matter from 'gray-matter'
 import ProjectCard from '../../components/ProjectCard'
 import styles from './Projects.module.css'
 
-const Projects = ({ projects }) => (
-  <>
+const Projects = ({ projects }) => {
+  projects.forEach((project, i) => {
+    if (project.slug === 'musician-finder') {
+      projects.splice(i, 1)
+      projects.unshift(project)
+    }
+  })
+
+  return (
+    <>
     <Head>
       <title>Projects</title>
     </Head>
     <main>
       <h1>Projects</h1>
-      <h2>Some info...</h2>
+      <h2 className={styles.intro}>Some info...</h2>
       <section className={styles.cardContainer}>
-        {projects.map((project, i) => <ProjectCard data={project} key={i}/>)}
+        {projects.map((project, i) => <ProjectCard 
+          data={project} 
+          favorite={i === 0 && true}
+          key={i}
+        />)}
       </section>
     </main> 
   </>
-)
+  )
+}
 
 
 export const getStaticProps = async () => {

@@ -6,7 +6,6 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 34px 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -16,6 +15,15 @@
   margin: 0 20px;
   font-weight: 600;
   font-size: 18px;
+}
+
+.nav a:not(:first-child) {
+  margin-top: 35px;
+}
+
+.nav img {
+  margin-top: 25px;
+  height: 50px;
 }
 
 .nav a:first-of-type {

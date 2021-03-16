@@ -9,10 +9,13 @@ const Navbar = () => {
     <header className={styles.header}>
         <nav className={styles.nav}>
           <Link href="/">
-            <a>Logo here</a>
+            <a><img src="/assets/images/logo.png" /></a>
           </Link>
           <Link href="/projects">
             <a className={router.pathname == '/projects' ? styles.active : ''}>Projects</a>
+          </Link>
+          <Link href="/photography">
+            <a className={router.pathname == '/photography' ? styles.active : ''}>Photography</a>
           </Link>
           <Link href="/about">
             <a className={router.pathname == '/about' ? styles.active : ''}>About</a>
