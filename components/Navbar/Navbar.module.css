@@ -1,0 +1,29 @@
+.header {
+  height: 100px;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: #1f1f1f;
+  margin: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav a:first-of-type {
+  margin-right: auto;
+}
+
+.nav .active {
+  text-decoration: underline;
+  text-decoration-color: #4146B5;
+  text-decoration-thickness: 4px;
+}
