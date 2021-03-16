@@ -12,13 +12,13 @@ const Navbar = () => {
             <a>Logo here</a>
           </Link>
           <Link href="/projects">
-            <a className={router.pathname == '/projects' && styles.active}>Projects</a>
+            <a className={router.pathname == '/projects' ? styles.active : ''}>Projects</a>
           </Link>
           <Link href="/about">
-            <a className={router.pathname == '/about' && styles.active}>About</a>
+            <a className={router.pathname == '/about' ? styles.active : ''}>About</a>
           </Link>
           <Link href="/contact">
-            <a className={router.pathname == '/contact' && styles.active}>Contact</a>
+            <a className={router.pathname == '/contact' ? styles.active : ''}>Contact</a>
           </Link>
         </nav>
     </header>

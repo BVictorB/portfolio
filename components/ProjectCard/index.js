@@ -1,17 +1,18 @@
 import Link from 'next/link'
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ data }) => {
   return (
-    <Link href={'/projects/' + project}>
+    <Link href={`/projects/${data.slug}`}>
       <a className={styles.card}>
-        <p className={styles.year}>2020</p>
-        <h2>{project}</h2>
-        <p>Short description ...</p>
+        <p className={styles.year}>{data.year}</p>
+        <h2>{data.title}</h2>
+        <p>{data.description}</p>
         <div className={styles.icons}>
           <p>icon1</p>
           <p>icon2</p>
         </div>
+        <img src={`/${data.slug}/main.png`}></img>
       </a>
     </Link>
   )

@@ -1,0 +1,19 @@
+.footer {
+  background: #7b41b5;
+  height: 150px;
+  display: flex;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container h3:first-child {
+  margin-right: auto;
+}
