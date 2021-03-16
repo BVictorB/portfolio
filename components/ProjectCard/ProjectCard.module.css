@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   margin: 24px 0;
-  padding: 6px 24px 28px;
+  padding: 6px 24px 20px;
   border-radius: 16px;
   color: white;
   transition: transform 150ms ease-in-out;
@@ -74,11 +74,13 @@
 .icons {
   margin-top: auto;
   display: flex;
-  margin-bottom: 16px;
 }
 
-.icons p {
-  margin: 0 12px;
+.icons img {
+  height: 48px;
+  width: auto;
+  margin-right: 20px;
+  border-radius: 8px;
 }
 
 .favorite {

@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import styles from './ProjectCard.module.css'
 
-const ProjectCard = ({ data, favorite }) => (
+const ProjectCard = ({ data, favorite }) => {
+  return (
     <Link href={`/projects/${data.slug}`}>
       <a className={styles.card}>
         {favorite && <div className={styles.favorite}>
@@ -12,12 +13,15 @@ const ProjectCard = ({ data, favorite }) => (
         <h2>{data.title}</h2>
         <p>{data.description}</p>
         <div className={styles.icons}>
-          <p>icon1</p>
-          <p>icon2</p>
+          {data.tech.split(', ').map(icon => (
+            <img src={`/assets/icons/${icon}.png`}></img>
+          ))}
         </div>
         <img className={styles.image} src={`/${data.slug}/main.png`}></img>
       </a>
     </Link>
-)
+  )
+}
+    
 
 export default ProjectCard

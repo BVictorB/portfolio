@@ -3,6 +3,7 @@ title: Progressive web apps (vervang deze titel)
 description: idk
 year: 2021
 repo: https://github.com/BVictorB/progressive-web-apps-2021
+tech: html, sass, javascript, nodejs, mongodb
 ---
 
 Iets met aandelen, sockets, notificaties en meer :^)
