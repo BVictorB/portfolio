@@ -1,8 +1,9 @@
 ---
 title: Friendship
 description: A dating webapplication for CMD - Project Tech
-year: 2020
+timestamp: 1586685600
 repo: https://github.com/BVictorB/friendship
+live: null
 tech: html, sass, javascript, nodejs, mongodb
 ---
 

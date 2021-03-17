@@ -1,8 +1,9 @@
 ---
 title: Ferry data visualization
 description: A datavisualization made in two days about face masks on ferries in Amsterdam for the Dataweek assignment during the Information Design - Tech Track.
-year: 2020
+timestamp: 1606820400
 repo: https://github.com/BVictorB/ferry-data-visualization
+live: https://ferry-data-visualization.netlify.app/
 tech: html, sass, javascript, react, d3
 ---
 

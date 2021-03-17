@@ -1,8 +1,9 @@
 ---
 title: CSS Rubik's Cube
 description: Rubik's Cube for the CSS to the Rescue course during the Web Minor.
-year: 2021
+timestamp: 1612177200
 repo: https://github.com/BVictorB/css-to-the-rescue-2021
+live: https://bvictorb.github.io/css-to-the-rescue-2021/
 tech: html, css
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: Parking in Amsterdam
 description: Cars in the city a repo made for the assignment that we got from de Volkskrant for the Information Design - Tech Track course.
-year: 2020
+timestamp: 1604228400
 repo: https://github.com/BVictorB/frontend-applications
+live: https://bvictorb-garage.netlify.app/
 tech: html, sass, javascript, react, d3
 ---
 

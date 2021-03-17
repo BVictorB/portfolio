@@ -1,8 +1,9 @@
 ---
 title: Progressive web apps (vervang deze titel)
 description: Iets met aandelen, sockets, notificaties en meer :^)
-year: 2021
+timestamp: 1615201200
 repo: https://github.com/BVictorB/progressive-web-apps-2021
+live: null
 tech: html, css, javascript, nodejs, mongodb
 ---
 

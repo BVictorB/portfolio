@@ -1,8 +1,9 @@
 ---
 title: Eenwoud
 description: A datavisualization made about trees with a special story for the Eenwoud assignment during the Information Design - Tech Track.
-year: 2020
+timestamp: 1607598000
 repo: https://github.com/BVictorB/eenwoud
+live: https://bvictorb-eenwoud.netlify.app/
 tech: html, sass, javascript, react, d3
 ---
 

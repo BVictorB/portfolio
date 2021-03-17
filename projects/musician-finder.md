@@ -1,8 +1,9 @@
 ---
 title: Musician Finder
 description: idk
-year: 2021
-repo: private
+timestamp: 1608462000
+repo: null
+live: null
 tech: typescript, react, redux
 favorite: true
 ---

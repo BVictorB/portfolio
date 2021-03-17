@@ -4,8 +4,10 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import styles from './Project.module.css'
+import ProjectInfo from '../../components/ProjectInfo'
 
-const Project = ({ content, data }) => (
+const Project = ({ content, data }) => {
+  return (  
   <>
     <Head>
       <title>{data.title}</title>
@@ -16,12 +18,15 @@ const Project = ({ content, data }) => (
         anchorHref="/projects"
       />
       <h1>{data.title}</h1>
+      <h2>{data.description}</h2>
+      <ProjectInfo data={data} />
       <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
       <ReactMarkdown>{content}</ReactMarkdown>
+      {data.live && <iframe src={data.live} title={`Embed ${data.title} website`} width="100%" height="500px"/>}
     </main>
   </>
 )
-
+}
 
 export const getStaticPaths = async () => {
   const files = fs.readdirSync('projects')

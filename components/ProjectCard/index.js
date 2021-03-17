@@ -3,6 +3,8 @@ import IconContainer from '../IconContainer'
 import styles from './ProjectCard.module.css'
 
 const ProjectCard = ({ data, favorite }) => {
+  const date = new Date(data.timestamp * 1000)
+
   return (
     <Link href={`/projects/${data.slug}`}>
       <a className={styles.card}>
@@ -10,7 +12,7 @@ const ProjectCard = ({ data, favorite }) => {
           <div className={styles.favoriteText}><p>Personal favorite</p></div>
           <div className={styles.favoriteIcon}><img src="/assets/images/trophy.png" alt="trophy icon" /></div>
         </div>}
-        <p className={styles.year}>{data.year}</p>
+        <p className={styles.year}>{date.getFullYear()}</p>
         <h2>{data.title}</h2>
         <p>{data.description}</p>
         <IconContainer icons={data.tech.split(', ')}/>
