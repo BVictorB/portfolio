@@ -19,10 +19,12 @@ const Project = ({ content, data }) => {
       />
       <h1>{data.title}</h1>
       <h2>{data.description}</h2>
-      <ProjectInfo data={data} />
-      <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
-      <ReactMarkdown>{content}</ReactMarkdown>
-      {data.live && <iframe src={data.live} title={`Embed ${data.title} website`} width="100%" height="500px"/>}
+      <div className={styles.container}>
+        <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
+        <ProjectInfo data={data} />
+      </div>
+      {/* <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
+      {data.live && <iframe src={data.live} title={`Embed ${data.title} website`} width="100%" height="500px"/>} */}
     </main>
   </>
 )

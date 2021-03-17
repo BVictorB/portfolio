@@ -32,16 +32,16 @@ const Navbar = () => {
           <NavMobile showNav={showNav} />
           <div className={styles.navContainer}>
             <Link href="/projects">
-              <a className={router.pathname == '/projects' ? `${styles.active} ${styles.a}` : styles.a}>Projects</a>
+              <a className={router.pathname.includes('/projects') ? `${styles.active} ${styles.a}` : styles.a}>Projects</a>
             </Link>
             <Link href="/photography">
-              <a className={router.pathname == '/photography' ? `${styles.active} ${styles.a}` : styles.a}>Photography</a>
+              <a className={router.pathname.includes('/photography') ? `${styles.active} ${styles.a}` : styles.a}>Photography</a>
             </Link>
             <Link href="/about">
-              <a className={router.pathname == '/about' ? `${styles.active} ${styles.a}` : styles.a}>About</a>
+              <a className={router.pathname.includes('/about') ? `${styles.active} ${styles.a}` : styles.a}>About</a>
             </Link>
             <Link href="/contact">
-              <a className={router.pathname == '/contact' ? `${styles.active} ${styles.a}` : styles.a}>Contact</a>
+              <a className={router.pathname.includes('/contact') ? `${styles.active} ${styles.a}` : styles.a}>Contact</a>
             </Link>
           </div>
         </nav>

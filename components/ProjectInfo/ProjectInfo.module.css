@@ -1,4 +1,35 @@
 .container {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 24px 32px;
+  border-radius: 16px;
   color: white;
-  background-color: #4146B5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #4146B5;
+  margin-left: auto;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.tech {
+  justify-self: flex-end;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 150ms ease-in-out;
+}
+
+.link:hover {
+  color: #d2d4ff;
+}
+
+.link:hover .arrow {
+  transform: translateX(4px);
 }
