@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import IconContainer from '../IconContainer'
 import styles from './ProjectCard.module.css'
 
 const ProjectCard = ({ data, favorite }) => {
@@ -12,12 +13,8 @@ const ProjectCard = ({ data, favorite }) => {
         <p className={styles.year}>{data.year}</p>
         <h2>{data.title}</h2>
         <p>{data.description}</p>
-        <div className={styles.icons}>
-          {data.tech.split(', ').map(icon => (
-            <img src={`/assets/icons/${icon}.png`}></img>
-          ))}
-        </div>
-        <img className={styles.image} src={`/${data.slug}/main.png`}></img>
+        <IconContainer icons={data.tech.split(', ')}/>
+        <img className={styles.image} src={`/projects/${data.slug}/main.png`}></img>
       </a>
     </Link>
   )

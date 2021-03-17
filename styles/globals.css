@@ -6,7 +6,6 @@
 }
 
 body {
-  overflow-y: scroll;
   position: relative;
   min-height: 100vh;
 }
@@ -25,7 +24,7 @@ main {
 
 @media (max-width: 1000px) {
   main {
-    padding: 20px 25px;
+    padding: 20px 25px 175px;
   }
 }
 

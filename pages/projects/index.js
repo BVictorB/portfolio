@@ -6,7 +6,7 @@ import styles from './Projects.module.css'
 
 const Projects = ({ projects }) => {
   projects.forEach((project, i) => {
-    if (project.slug === 'musician-finder') {
+    if (project.favorite) {
       projects.splice(i, 1)
       projects.unshift(project)
     }

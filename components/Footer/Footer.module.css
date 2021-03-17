@@ -15,11 +15,7 @@
   margin: 0 auto;
   padding: 0 25px;
   display: flex;
-  justify-content: flex-end;
-}
-
-.container h3:first-child {
-  margin-right: auto;
+  justify-content: center;
 }
 
 .container img {

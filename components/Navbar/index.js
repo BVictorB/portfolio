@@ -1,31 +1,52 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import NavMobile from '../NavMobile'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
-  const router = useRouter()
+  const 
+    router = useRouter(),
+    [showNav, setShowNav] = useState(false)
+  
+  useEffect(() => {
+    if (showNav) {
+      document.body.style.overflowY = 'hidden'
+    } else {
+      document.body.style.overflowY = 'scroll'
+    }
+  }, [showNav])
 
   return (
     <header className={styles.header}>
         <nav className={styles.nav}>
           <Link href="/">
-            <a><img src="/assets/images/logo.png" /></a>
+            <a className={styles.logo}><img src="/assets/images/logo.svg" /></a>
           </Link>
-          <Link href="/projects">
-            <a className={router.pathname == '/projects' ? styles.active : ''}>Projects</a>
-          </Link>
-          <Link href="/photography">
-            <a className={router.pathname == '/photography' ? styles.active : ''}>Photography</a>
-          </Link>
-          <Link href="/about">
-            <a className={router.pathname == '/about' ? styles.active : ''}>About</a>
-          </Link>
-          <Link href="/contact">
-            <a className={router.pathname == '/contact' ? styles.active : ''}>Contact</a>
-          </Link>
+          <div onClick={() => setShowNav(prevState => !prevState)} className={showNav ? `${styles.navButton} ${styles.active}` : styles.navButton}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <NavMobile showNav={showNav} />
+          <div className={styles.navContainer}>
+            <Link href="/projects">
+              <a className={router.pathname == '/projects' ? `${styles.active} ${styles.a}` : styles.a}>Projects</a>
+            </Link>
+            <Link href="/photography">
+              <a className={router.pathname == '/photography' ? `${styles.active} ${styles.a}` : styles.a}>Photography</a>
+            </Link>
+            <Link href="/about">
+              <a className={router.pathname == '/about' ? `${styles.active} ${styles.a}` : styles.a}>About</a>
+            </Link>
+            <Link href="/contact">
+              <a className={router.pathname == '/contact' ? `${styles.active} ${styles.a}` : styles.a}>Contact</a>
+            </Link>
+          </div>
         </nav>
     </header>
-  )
+ )
 }
 
 export default Navbar
