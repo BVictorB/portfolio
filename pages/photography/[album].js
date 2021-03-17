@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import ArrowAnchor from '../../components/ArrowAnchor'
 import fs from 'fs'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import ArrowAnchor from '@components/ArrowAnchor'
 import styles from './Album.module.css'
 
 const PhotoAlbum = ({ content, data }) => {

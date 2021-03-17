@@ -11,7 +11,7 @@ const Photography = ({ albums }) => (
     </Head>
     <main>
       <h1>Photography</h1>
-      {albums.map((album) => <Link href={`/photography/${album.slug}`}><a>{album.title}</a></Link>)}
+      {albums.map(album => <Link key={album} href={`/photography/${album.slug}`}><a>{album.title}</a></Link>)}
     </main> 
   </>
 )

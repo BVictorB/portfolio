@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import ArrowAnchor from '../../components/ArrowAnchor'
 import fs from 'fs'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import ArrowAnchor from '@components/ArrowAnchor'
+import ProjectInfo from '@components/ProjectInfo'
 import styles from './Project.module.css'
-import ProjectInfo from '../../components/ProjectInfo'
 
 const Project = ({ content, data }) => {
   return (  
