@@ -10,7 +10,7 @@ const Project = ({ content, data }) => {
   return (  
   <>
     <Head>
-      <title>{data.title}</title>
+      <title>Projects | {data.title}</title>
     </Head>
     <main>
       <ArrowAnchor
@@ -23,15 +23,17 @@ const Project = ({ content, data }) => {
         <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
         <ProjectInfo data={data} />
       </div>
-      {/* <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
-      {data.live && <iframe src={data.live} title={`Embed ${data.title} website`} width="100%" height="500px"/>} */}
+      {data.live && <h2>Live version</h2>}
+      {data.live && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
+      <h2>Images</h2>
+      <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
     </main>
   </>
 )
 }
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync('projects')
+  const files = fs.readdirSync('content/projects')
   const paths = files.map(filename => ({
     params: {
       id: filename.replace('.md', '')
@@ -46,7 +48,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { id } }) => {
   const markdown = fs
-    .readFileSync(`projects/${id}.md`)
+    .readFileSync(`content/projects/${id}.md`)
     .toString()
 
   const parsedMarkdown = matter(markdown)

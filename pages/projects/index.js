@@ -15,7 +15,7 @@ const Projects = ({ projects }) => {
   return (
     <>
     <Head>
-      <title>Projects</title>
+      <title>Victor Boucher | Projects</title>
     </Head>
     <main>
       <h1>Projects</h1>
@@ -34,11 +34,11 @@ const Projects = ({ projects }) => {
 
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync('projects')
+  const files = fs.readdirSync('content/projects')
 
   const projects = files.map(file => {
     const markdown = fs
-      .readFileSync(`projects/${file}`)
+      .readFileSync(`content/projects/${file}`)
       .toString()
 
     const parsedMarkdown = matter(markdown)

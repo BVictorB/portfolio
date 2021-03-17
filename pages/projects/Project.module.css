@@ -1,18 +1,34 @@
 .container {
   display: flex;
-  margin: 48px 0;
+  margin: 32px 0 48px;
+}
+
+.text {
+  font-size: 18px;
+  width: 60%;
 }
 
 @media (max-width: 1000px) {
   .container {
     display: block;
   }
+
+  .text {
+    width: 100%;
+    max-width: 750px;
+  }
 }
 
 .headerImg {
   width: 100%;
+  border-radius: 16px;
+  margin: 12px 0 32px;
 }
 
-.text {
-  width: 60%;
+.embed {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 16px;
+  margin: 12px 0 32px;
 }

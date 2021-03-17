@@ -1,16 +1,10 @@
 .icons {
-  margin: 32px 0 16px;
+  display: flex;
+  margin: auto 0 0 0;
 }
 
 .icons img {
   height: 32px;
   width: auto;
   margin-right: 20px;
-}
-
-@media (min-width: 1000px) {
-  .icons {
-    display: flex;
-    margin: auto 0 0 0;
-  }
 }

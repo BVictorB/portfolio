@@ -11,9 +11,9 @@ const ProjectInfo = ({ data }) => {
     <div className={styles.container}>
       <h3>Info</h3>
       {data.timestamp ? <p>{`${month}, ${year}`}</p> : <p>Unknown date</p>}
-      {data.live ? <a className={styles.link} href={data.live} target="_blank">Live version <span className={styles.arrow}>&rarr;</span></a> : <p>There is no live version</p>}
-      {data.repo ? <a className={styles.link} href={data.repo} target="_blank">GitHub repository <span className={styles.arrow}>&rarr;</span></a> : <p>This repo is private</p>}
-      {data.tech ? <IconContainer className={styles.tech} icons={data.tech.split(', ')}/> : <p>There are no added technologies</p>}
+      {data.live && <a className={styles.link} href={data.live} target="_blank">Live version <span className={styles.arrow}>&rarr;</span></a>}
+      {data.repo && <a className={styles.link} href={data.repo} target="_blank">GitHub repository <span className={styles.arrow}>&rarr;</span></a>}
+      {data.tech && <IconContainer className={styles.tech} icons={data.tech.split(', ')}/>}
     </div>
   )
 }

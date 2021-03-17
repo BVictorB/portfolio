@@ -14,7 +14,7 @@ const ProjectCard = ({ data, favorite }) => {
         </div>}
         <p className={styles.year}>{date.getFullYear()}</p>
         <h2>{data.title}</h2>
-        <p>{data.description}</p>
+        <p className={styles.description}>{data.description}</p>
         <IconContainer icons={data.tech.split(', ')}/>
         <img className={styles.image} src={`/projects/${data.slug}/main.png`}></img>
       </a>

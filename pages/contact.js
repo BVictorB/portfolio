@@ -3,7 +3,7 @@ import Head from 'next/head'
 const Contact = () => (
   <>
     <Head>
-      <title>Contact</title>
+      <title>Victor Boucher | Contact</title>
     </Head>
     <main>
       <h1>Contact</h1>
