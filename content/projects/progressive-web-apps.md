@@ -1,4 +1,5 @@
 ---
+order: 9
 title: Progressive web apps (vervang deze titel)
 description: Iets met aandelen, sockets, notificaties en meer :^)
 timestamp: 1615201200

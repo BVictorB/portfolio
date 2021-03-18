@@ -1,4 +1,5 @@
 ---
+order: 7
 title: Eenwoud
 description: A datavisualization made about trees with a special story for the Eenwoud assignment during the Information Design - Tech Track.
 timestamp: 1607598000

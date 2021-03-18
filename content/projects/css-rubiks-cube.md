@@ -1,4 +1,5 @@
 ---
+order: 6
 title: CSS Rubik's Cube
 description: Rubik's Cube for the CSS to the Rescue course during the Web Minor.
 timestamp: 1612177200

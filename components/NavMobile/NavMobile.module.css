@@ -33,9 +33,10 @@
 }
 
 .logo {
+  position: absolute;
+  left: calc(-75vw + 50%);
   margin-top: 64px;
   width: 150vw;
-  transform: translateX(-25vw);
   height: auto;
   opacity: .3;
 }

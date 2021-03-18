@@ -1,4 +1,5 @@
 ---
+order: 3
 title: Ferry data visualization
 description: A datavisualization made in two days about face masks on ferries in Amsterdam for the Dataweek assignment during the Information Design - Tech Track.
 timestamp: 1606820400

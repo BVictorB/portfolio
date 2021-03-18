@@ -8,28 +8,28 @@ import styles from './Project.module.css'
 
 const Project = ({ content, data }) => {
   return (  
-  <>
-    <Head>
-      <title>Projects | {data.title}</title>
-    </Head>
-    <main>
-      <ArrowAnchor
-        anchorText="Back to projects"
-        anchorHref="/projects"
-      />
-      <h1>{data.title}</h1>
-      <h2>{data.description}</h2>
-      <div className={styles.container}>
-        <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
-        <ProjectInfo data={data} />
-      </div>
-      {data.live && <h2>Live version</h2>}
-      {data.live && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
-      <h2>Images</h2>
-      <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
-    </main>
-  </>
-)
+    <>
+      <Head>
+        <title>Projects | {data.title}</title>
+      </Head>
+      <main>
+        <ArrowAnchor
+          anchorText="Back to projects"
+          anchorHref="/projects"
+        />
+        <h1>{data.title}</h1>
+        <h2>{data.description}</h2>
+        <div className={styles.container}>
+          <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
+          <ProjectInfo data={data} />
+        </div>
+        {data.live && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
+        {data.live && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
+        <h2>Images</h2>
+        <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
+      </main>
+    </>
+  )
 }
 
 export const getStaticPaths = async () => {

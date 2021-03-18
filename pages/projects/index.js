@@ -5,12 +5,14 @@ import ProjectCard from '@components/ProjectCard'
 import styles from './Projects.module.css'
 
 const Projects = ({ projects }) => {
-  projects.forEach((project, i) => {
-    if (project.favorite) {
-      projects.splice(i, 1)
-      projects.unshift(project)
-    }
-  })
+  // projects.forEach((project, i) => {
+  //   if (project.favorite) {
+  //     projects.splice(i, 1)
+  //     projects.unshift(project)
+  //   }
+  // })
+
+  projects.sort((a, b) => a.order - b.order)
 
   return (
     <>
@@ -23,7 +25,7 @@ const Projects = ({ projects }) => {
       <section className={styles.cardContainer}>
         {projects.map((project, i) => <ProjectCard 
           data={project} 
-          favorite={i === 0 && true}
+          favorite={project.favorite}
           key={i}
         />)}
       </section>
