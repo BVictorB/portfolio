@@ -16,12 +16,12 @@ const About = () => {
     },
     {
       date: 'September 2018',
-      info: 'Communication & Multimedia Design',
+      info: 'Communication & Multimedia Design (started)',
       at: 'Hogeschool van Amsterdam'
     },
     {
       date: 'June 2017',
-      info: 'Havo N&G',
+      info: 'Havo N&G (graduated)',
       at: 'Joke Smit College Amsterdam'
     },
     {
@@ -31,7 +31,7 @@ const About = () => {
     },
     {
       date: 'June 2016',
-      info: 'Havo N&T',
+      info: 'Havo N&T (graduated)',
       at: 'Geert Groote College Amsterdam'
     }
   ]
@@ -43,9 +43,7 @@ const About = () => {
       </Head>
       <main>
         <h1>About</h1>
-        <h2>[BRIEF DESCRIPTION ABOUT MYSELF]</h2>
-        <h2>[INTERESTS]</h2>
-        <h2>[QUALITIES]</h2>
+        <h2>Timeline</h2>
         <Timeline events={events} />
       </main>
     </>

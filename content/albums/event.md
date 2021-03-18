@@ -1,5 +1,5 @@
 ---
 title: Event
-description: Event photography descrtiption...
+description: Event photography description...
 order: 1
 ---

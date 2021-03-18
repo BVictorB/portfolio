@@ -1,5 +1,5 @@
 ---
 title: Portrait
-description: Portrait photography descrtiption...
+description: Portrait photography description...
 order: 2
 ---
