@@ -1,5 +1,5 @@
 ---
 title: Travel
-description: Travel photography descrtiption...
+description: Travel photography description...
 order: 3
 ---

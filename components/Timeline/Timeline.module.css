@@ -1,0 +1,42 @@
+.list {
+  margin: 24px 0 0 10px;
+  list-style: none;
+}
+
+.listItem {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #4147b572;
+  position: relative;
+  padding-left: 20px;
+}
+
+.listItem:last-child {
+  border: 0px;
+}
+
+.listItem:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #4146B5;
+  box-shadow: 3px 3px 0px #4147b572;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.date {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4146B5;
+  line-height: .9;
+}
+
+.info {
+  margin: 6px 0 3px;
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 200px;
+  line-height: 1.2;
+}
