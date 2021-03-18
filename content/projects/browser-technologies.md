@@ -1,9 +1,9 @@
 ---
-order: 9
-title: Progressive web apps (verander deze titel)
-description: Iets met aandelen, sockets, notificaties en meer :^)
+order: 10
+title: Browser Technologies (verander deze titel)
+description: Iets met een poll :^)
 timestamp: 1615201200
-repo: https://github.com/BVictorB/progressive-web-apps-2021
+repo: https://github.com/BVictorB/browser-technologies-2021
 tech: html, css, javascript, nodejs, mongodb
 ---
 

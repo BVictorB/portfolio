@@ -3,8 +3,6 @@ order: 1
 title: Musician Finder
 description: iOS / Android application created with React Native in combination with Redux and the power of TypeScript. Musician Finder is an app for everyone that does something with music, it could be used to find a singer for your new song, or a band to jam with.
 timestamp: 1608462000
-repo: null
-live: null
 tech: typescript, react, redux
 favorite: true
 ---
