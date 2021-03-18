@@ -40,9 +40,6 @@ const Navbar = () => {
             <Link href="/about">
               <a className={router.pathname.includes('/about') ? `${styles.active} ${styles.a}` : styles.a}>About</a>
             </Link>
-            <Link href="/contact">
-              <a className={router.pathname.includes('/contact') ? `${styles.active} ${styles.a}` : styles.a}>Contact</a>
-            </Link>
           </div>
         </nav>
     </header>

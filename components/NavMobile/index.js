@@ -16,9 +16,6 @@ const NavMobile = ({ showNav, setShowNav }) => {
         <Link href="/about">
           <a onClick={() => setShowNav(prevState => !prevState)} className={router.pathname.includes('/about') ? `${styles.active} ${styles.a}` : styles.a}>About</a>
         </Link>
-        <Link href="/contact">
-          <a onClick={() => setShowNav(prevState => !prevState)} className={router.pathname.includes('/contact') ? `${styles.active} ${styles.a}` : styles.a}>Contact</a>
-        </Link>
         <img className={styles.logo} src="/assets/images/logo.svg" />
     </nav>
  )

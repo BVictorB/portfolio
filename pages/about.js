@@ -10,7 +10,7 @@ const About = () => (
       <h2>[BRIEF DESCRIPTION ABOUT MYSELF]</h2>
       <h2>[INTERESTS]</h2>
       <h2>[QUALITIES]</h2>
-      <h2>[PHOTO OF MYSELF]</h2>
+      <h2>[TIMELINE]</h2>
     </main>
   </>
 )
