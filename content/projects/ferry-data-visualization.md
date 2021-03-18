@@ -1,7 +1,7 @@
 ---
 order: 3
 title: Ferry data visualization
-description: A datavisualization made in two days about face masks on ferries in Amsterdam for the Dataweek assignment during the Information Design - Tech Track.
+description: A data visualization that was made in just two days. The visualization shows how many people actually wear a facemask on the ferry, or take it off too early. Based on type of travel (pedestrian, moped, bicycle).
 timestamp: 1606820400
 repo: https://github.com/BVictorB/ferry-data-visualization
 live: https://ferry-data-visualization.netlify.app/

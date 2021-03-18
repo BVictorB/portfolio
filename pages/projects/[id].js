@@ -23,8 +23,8 @@ const Project = ({ content, data }) => {
           <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
           <ProjectInfo data={data} />
         </div>
-        {data.live && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
-        {data.live && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
+        {data.embed && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
+        {data.embed && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
         <h2>Images</h2>
         <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
       </main>

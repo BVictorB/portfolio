@@ -7,7 +7,7 @@ const AlbumCard = ({ data }) => {
       <a 
         className={styles.card}
         style={{
-          backgroundImage: `url('/assets/photos/${data.slug}/main.jpg')`
+          backgroundImage: `url('/albums/${data.slug}/main.jpg')`
         }}
       >
         <h2 className={styles.title}>{data.title}</h2>

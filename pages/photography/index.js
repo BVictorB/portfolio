@@ -14,7 +14,7 @@ const Photography = ({ albums }) => {
       </Head>
       <main>
         <h1>Photography</h1>
-        <h2>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h2>
+        <h2>Click on one of the albums below to see some of my work. I mainly do event photography but I also enjoy capturing the enviroment and people.</h2>
         {albums.map((album, i) => <AlbumCard 
           data={album} 
           key={i}

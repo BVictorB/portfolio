@@ -1,7 +1,7 @@
 ---
 order: 7
 title: Eenwoud
-description: A datavisualization made about trees with a special story for the Eenwoud assignment during the Information Design - Tech Track.
+description: A data visualization about trees with a special story. The trees are plotted onto a map, you can look around on this map and get more info about trees (the original location, pictures, an audio story and more).
 timestamp: 1607598000
 repo: https://github.com/BVictorB/eenwoud
 live: https://bvictorb-eenwoud.netlify.app/
