@@ -6,7 +6,7 @@ import ArrowAnchor from '@components/ArrowAnchor'
 import ProjectInfo from '@components/ProjectInfo'
 import styles from './Project.module.css'
 
-const Project = ({ content, data }) => {
+const Project = ({ content, data, images }) => {
   return (  
     <>
       <Head>
@@ -26,7 +26,7 @@ const Project = ({ content, data }) => {
         {data.embed && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
         {data.embed && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
         <h2>Images</h2>
-        <img className={styles.headerImg} src={`/projects/${data.slug}/main.png`}></img>
+        {images.map(image => <img key={image} className={styles.image} src={`/projects/${data.slug}/${image}`}></img>)}
       </main>
     </>
   )
@@ -51,6 +51,7 @@ export const getStaticProps = async ({ params: { id } }) => {
     .readFileSync(`content/projects/${id}.md`)
     .toString()
 
+  const images = fs.readdirSync(`public/projects/${id}`)
   const parsedMarkdown = matter(markdown)
 
   return {
@@ -59,7 +60,8 @@ export const getStaticProps = async ({ params: { id } }) => {
       data: {
         slug: id,
         ...parsedMarkdown.data
-      }
+      },
+      images
     }
   }
 }
