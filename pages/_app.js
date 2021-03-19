@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Footer from '@components/Footer'
-import Navbar from '@components/Navbar'
+import { Navbar, Footer } from '@components/index'
 import '../styles/globals.css'
 
 const App = ({ Component, pageProps }) => {

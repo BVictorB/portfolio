@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import fs from 'fs'
 import matter from 'gray-matter'
-import ArrowAnchor from '@components/ArrowAnchor'
+import { ArrowAnchor } from '@components/index'
 import styles from './Album.module.css'
 
 const PhotoAlbum = ({ data, photos }) => {
@@ -16,7 +16,6 @@ const PhotoAlbum = ({ data, photos }) => {
           anchorHref="/photography"
         />
         <h1>{data.title}</h1>
-        <h2>{data.description}</h2>
         <section className={styles.container}>
           {photos.map(photo => <img key={photo} className={styles.photo} src={`/albums/${data.slug}/${photo}`}></img>)}
         </section>

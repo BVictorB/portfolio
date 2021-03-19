@@ -2,8 +2,7 @@ import Head from 'next/head'
 import fs from 'fs'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
-import ArrowAnchor from '@components/ArrowAnchor'
-import ProjectInfo from '@components/ProjectInfo'
+import { ArrowAnchor, ProjectInfo } from '@components/index'
 import styles from './Project.module.css'
 
 const Project = ({ content, data, images }) => {

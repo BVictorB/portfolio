@@ -1,13 +1,23 @@
-import Timeline from '@components/Timeline/index'
+import { Timeline } from '@components/index'
 import Head from 'next/head'
 import styles from './About.module.css'
 
 const About = () => {
   const events = [
     {
-      date: 'January 2020',
+      date: 'September 2020',
+      info: 'Student assistant for CMD frontend courses',
+      at: 'Hogeschool van Amsterdam'
+    },
+    {
+      date: 'January 2020 - April 2020',
       info: 'Frontend development internship',
       at: 'Super Interactive'
+    },
+    {
+      date: 'April 2019',
+      info: 'Event photography',
+      at: 'Boucher.pics'
     },
     {
       date: 'October 2018',
@@ -16,22 +26,22 @@ const About = () => {
     },
     {
       date: 'September 2018',
-      info: 'Communication & Multimedia Design (started)',
+      info: 'Communication & Multimedia Design',
       at: 'Hogeschool van Amsterdam'
     },
     {
-      date: 'June 2017',
-      info: 'Havo N&G (graduated)',
+      date: 'August 2016 - June 2017',
+      info: 'Havo N&G',
       at: 'Joke Smit College Amsterdam'
     },
     {
-      date: 'August 2016',
+      date: 'August 2016 - September 2018',
       info: 'Graphic design & DTP',
       at: 'Repro Amsterdam'
     },
     {
-      date: 'June 2016',
-      info: 'Havo N&T (graduated)',
+      date: 'August 2010 - June 2016',
+      info: 'Havo N&T',
       at: 'Geert Groote College Amsterdam'
     }
   ]

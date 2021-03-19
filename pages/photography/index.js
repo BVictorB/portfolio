@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import fs from 'fs'
 import matter from 'gray-matter'
-import AlbumCard from '@components/AlbumCard/index'
+import { AlbumCard } from '@components/index'
 import styles from './Albums.module.css'
 
 const Photography = ({ albums }) => {

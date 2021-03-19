@@ -1,4 +1,4 @@
-import IconContainer from '../IconContainer'
+import { IconContainer } from '@components/index'
 import styles from './ProjectInfo.module.css'
 
 const ProjectInfo = ({ data }) => {

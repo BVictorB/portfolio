@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import IconContainer from '@components/IconContainer'
+import { IconContainer } from '@components/index'
 import styles from './ProjectCard.module.css'
 
 const ProjectCard = ({ data, favorite }) => {

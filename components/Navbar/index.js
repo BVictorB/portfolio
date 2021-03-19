@@ -1,21 +1,10 @@
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import NavMobile from '@components/NavMobile'
+import { Projects, About, Photography } from '@icons/index'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
-  const 
-    router = useRouter(),
-    [showNav, setShowNav] = useState(false)
-  
-  useEffect(() => {
-    if (showNav) {
-      document.body.style.overflowY = 'hidden'
-    } else {
-      document.body.style.overflowY = 'scroll'
-    }
-  }, [showNav])
+  const router = useRouter()
 
   return (
     <header className={styles.header}>
@@ -23,24 +12,24 @@ const Navbar = () => {
           <Link href="/">
             <a className={styles.logo}><img src="/assets/images/logo.svg" /></a>
           </Link>
-          <div onClick={() => setShowNav(prevState => !prevState)} className={showNav ? `${styles.navButton} ${styles.active}` : styles.navButton}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <NavMobile showNav={showNav} />
-          <div className={styles.navContainer}>
-            <Link href="/projects">
-              <a className={router.pathname.includes('/projects') ? `${styles.active} ${styles.a}` : styles.a}>Projects</a>
-            </Link>
-            <Link href="/photography">
-              <a className={router.pathname.includes('/photography') ? `${styles.active} ${styles.a}` : styles.a}>Photography</a>
-            </Link>
-            <Link href="/about">
-              <a className={router.pathname.includes('/about') ? `${styles.active} ${styles.a}` : styles.a}>About</a>
-            </Link>
-          </div>
+          <Link href="/projects">
+            <a className={styles.a}>
+              <p className={router.pathname.includes('/projects') ? `${styles.active} ${styles.p}` : styles.p}>Projects</p>
+              <Projects color={router.pathname.includes('/projects') ? '#4146B5' : '#1f1f1f'}/>
+            </a>
+          </Link>
+          <Link href="/photography">
+            <a className={styles.a}>
+              <p className={router.pathname.includes('/photography') ? `${styles.active} ${styles.p}` : styles.p}>Photography</p>
+              <Photography color={router.pathname.includes('/photography') ? '#4146B5' : '#1f1f1f'}/>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a className={styles.a}>
+              <p className={router.pathname.includes('/about') ? `${styles.active} ${styles.p}` : styles.p}>About</p>
+              <About color={router.pathname.includes('/about') ? '#4146B5' : '#1f1f1f'}/>
+            </a>
+          </Link>
         </nav>
     </header>
  )

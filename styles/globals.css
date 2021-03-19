@@ -43,7 +43,7 @@ h1 {
   text-decoration-color: #4146B5;
   text-decoration-thickness: 8px;
   line-height: 1.1;
-  margin: 32px 0;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 1000px) {
