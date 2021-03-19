@@ -1,11 +1,11 @@
 .card {
   display: flex;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   height: 350px;
   width: 100%;
   margin: 48px 0;
-  padding: 20px 24px;
+  padding: 10px 24px;
   border-radius: 16px;
   color: white;
   transition: transform 150ms ease-in-out;
@@ -49,16 +49,10 @@
 
 .title {
   z-index: 1;
-  font-size: 64px;
+  font-size: 72px;
   max-width: 550px;
   line-height: 1;
   margin-bottom: 12px;
   color: white;
-}
-
-.description {
-  z-index: 1;
-  font-size: 20px;
-  line-height: 1.2;
-  max-width: 350px;
+  align-self: flex-end;
 }

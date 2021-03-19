@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import fs from 'fs'
 import matter from 'gray-matter'
-import ProjectCard from '@components/ProjectCard'
+import { ProjectCard } from '@components/index'
 import styles from './Projects.module.css'
 
 const Projects = ({ projects }) => {
