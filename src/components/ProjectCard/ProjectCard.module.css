@@ -1,0 +1,154 @@
+.card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 24px 0;
+  padding: 6px 24px 20px;
+  border-radius: 16px;
+  color: white;
+  transition: transform 150ms ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #4146B5;
+  background-image: linear-gradient(#4146B5, #7b41b5);
+  background-attachment: fixed;
+}
+
+.image {
+  position: relative;
+  display: block;
+  margin: 24px 0 0;
+  border-radius: 16px;
+  height: 300px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: rgb(0, 0, 0, 0.24) -10px 4px 15px;
+  transition: all 150ms ease-in-out;
+}
+
+.description {
+  margin-bottom: 24px;
+}
+
+.card p {
+  max-width: 500px;
+}
+
+.card:hover, 
+.card:focus {
+  transform: scale(1.02);
+}
+
+.card:hover .favoriteIcon svg, 
+.card:focus .favoriteIcon svg {
+  transform: rotate(360deg);
+}
+
+.card:hover .favoriteText,
+.card:focus .favoriteText {
+  width: 175px;
+  opacity: 1;
+}
+
+.card:hover .favoriteText p,
+.card:focus .favoriteText p {
+  opacity: 1;
+  transition: opacity 100ms ease-in-out 150ms;
+}
+
+.year {
+  font-size: 16px;
+  position: relative;
+  top: 14px;
+  margin-bottom: 16px;
+}
+
+.card h2 {
+  font-size: 48px;
+  max-width: 550px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.favorite {
+  display: flex;
+  position: absolute;
+  top: -45px;
+  right: -5px;
+  z-index: 2;
+}
+
+@media (min-width: 1100px) {
+  .favorite {
+    right: -45px;
+  }
+}
+
+.favoriteText {
+  margin-top: 15px;
+  padding: 5px 14px 0 0;
+  height: 45px;
+  width: 0;
+  opacity: 0;
+  text-align: right;
+  font-weight: 600;
+  font-size: 20px;
+  background: #272a6c;
+  background-image: linear-gradient(#333893, #272a6c);
+  border-radius: 16px 0 0 16px;
+  transform: translateX(10px);
+  transition: all 200ms ease-in-out;
+}
+
+.favoriteText p {
+  opacity: 0;
+  transition: opacity 50ms ease-in-out;
+}
+
+.favoriteIcon {
+  width: 75px;
+  border-radius: 50%;
+  background: #272a6c;
+  background-image: linear-gradient(#333893, #272a6c);
+}
+
+.favoriteIcon svg {
+  display: block;
+  margin: 10px auto;
+  height: 55px;
+  transition: transform 800ms cubic-bezier(0.7, -0.6, 0.3, 1.6);
+}
+
+@media (min-width: 1000px) {
+  .card {
+    height: 350px;
+  }
+
+  .card p {
+    max-width: 300px;
+  }
+
+  .card h2 {
+    max-width: 450px;
+  }
+
+  .image {
+    margin: 0;
+    position: absolute;
+    width: 450px;
+    top: 25px;
+    right: 0px;
+    border-radius: 16px 0 0 16px;
+  }
+
+  .card:hover {
+    transform: scale(1.02) translateY(-5px);
+  }
+  
+  .card:hover .image {
+    right: 25px;
+    border-radius: 16px;
+  }
+}
