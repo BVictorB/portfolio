@@ -1,0 +1,60 @@
+.header {
+  height: 100px;
+}
+
+.nav {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 26px;
+  justify-content: flex-end;
+}
+
+.a {
+  margin: 0 20px;
+}
+
+.a:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo svg {
+  height: 50px;
+}
+
+.p {
+  margin-top: 10px;
+  color: #1f1f1f;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.p.active {
+  text-decoration: underline;
+  text-decoration-color: #4146B5;
+  text-decoration-thickness: 4px;
+}
+
+.a svg {
+  display: none;
+  width: 48px;
+}
+
+@media (max-width: 500px) {
+  .a svg {
+    display: block;
+  }
+
+  .a {
+    margin: 0 10px;
+  }
+
+  .p {
+    display: none;
+  }
+}

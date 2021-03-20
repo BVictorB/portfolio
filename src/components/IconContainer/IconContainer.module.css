@@ -1,0 +1,10 @@
+.icons {
+  display: flex;
+  margin: auto 0 0 0;
+}
+
+.icons svg {
+  height: 32px;
+  width: auto;
+  margin-right: 20px;
+}
