@@ -16,19 +16,16 @@ const Navbar = () => {
           <Link href="/projects">
             <a className={styles.a}>
               <p className={router.pathname.includes('/projects') ? `${styles.active} ${styles.p}` : styles.p}>Projects</p>
-              <Projects color={router.pathname.includes('/projects') ? '#4146B5' : '#1f1f1f'}/>
             </a>
           </Link>
           <Link href="/photography">
             <a className={styles.a}>
               <p className={router.pathname.includes('/photography') ? `${styles.active} ${styles.p}` : styles.p}>Photography</p>
-              <Photography color={router.pathname.includes('/photography') ? '#4146B5' : '#1f1f1f'}/>
             </a>
           </Link>
           <Link href="/about">
             <a className={styles.a}>
               <p className={router.pathname.includes('/about') ? `${styles.active} ${styles.p}` : styles.p}>About</p>
-              <About color={router.pathname.includes('/about') ? '#4146B5' : '#1f1f1f'}/>
             </a>
           </Link>
         </nav>

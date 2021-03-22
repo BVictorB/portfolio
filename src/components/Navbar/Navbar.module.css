@@ -40,21 +40,27 @@
   text-decoration-thickness: 4px;
 }
 
-.a svg {
-  display: none;
-  width: 48px;
-}
+@media (max-width: 470px) {
+  .header {
+    height: 140px;
+  }
 
-@media (max-width: 500px) {
-  .a svg {
+  .nav {
     display: block;
+    text-align: center;
+  }
+
+  .logo svg {
+    display: block;
+    margin: 0 auto;
   }
 
   .a {
-    margin: 0 10px;
+    display: inline-block;
+    margin: 24px 10px;
   }
 
   .p {
-    display: none;
+    font-size: 16px;
   }
 }

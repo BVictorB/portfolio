@@ -52,8 +52,11 @@ const About = () => {
       </Head>
       <main>
         <h1>About</h1>
+        <p>Info about me...</p>
         <h2>Timeline</h2>
         <Timeline events={events} />
+        <h2>Hobbies</h2>
+        <p>Some hobbies...</p>
       </main>
     </>
   )
