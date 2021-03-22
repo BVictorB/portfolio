@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Projects, About, Photography } from '@icons'
 import { Logo } from '@images'
 import styles from './Navbar.module.css'
 
@@ -11,7 +10,7 @@ const Navbar = () => {
     <header className={styles.header}>
         <nav className={styles.nav}>
           <Link href="/">
-            <a className={styles.logo}><Logo color={'#4146B5'}/></a>
+            <a className={styles.logo} title="Home"><Logo color={'#4146B5'}/></a>
           </Link>
           <Link href="/projects">
             <a className={styles.a}>

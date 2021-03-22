@@ -45,6 +45,10 @@ const About = () => {
     }
   ]
 
+  const 
+    ageInMs = new Date(Date.now() - 895298400000),
+    age = ageInMs.getUTCFullYear() - 1970
+
   return (
     <>
       <Head>
@@ -52,7 +56,7 @@ const About = () => {
       </Head>
       <main>
         <h1>About</h1>
-        <p>Info about me...</p>
+        <p>Info about me... {age}</p>
         <h2>Timeline</h2>
         <Timeline events={events} />
         <h2>Hobbies</h2>

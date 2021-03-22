@@ -1,4 +1,4 @@
-export { default as AlbumCard } from './AlbumCard'
+export { default as ImageCard } from './ImageCard'
 export { default as ArrowAnchor } from './ArrowAnchor'
 export { default as Footer } from './Footer'
 export { default as IconContainer } from './IconContainer'

@@ -17,7 +17,7 @@ const ProjectCard = ({ data, favorite }) => {
         <h2>{data.title}</h2>
         <p className={styles.description}>{data.description}</p>
         <IconContainer icons={data.tech.split(', ')}/>
-        <img className={styles.image} src={`/projects/${data.slug}/${data.slug}-1.png`}></img>
+        <img className={styles.image} src={`/projects/${data.slug}/${data.slug}-1.png`} alt={data.title}></img>
       </a>
     </Link>
   )

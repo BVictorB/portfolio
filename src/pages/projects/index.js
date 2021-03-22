@@ -14,7 +14,7 @@ const Projects = ({ projects }) => {
     </Head>
     <main>
       <h1>Projects</h1>
-      <h2 className={styles.intro}>Below are some of my (school) projects. If you want to get a bit more information, just click on one of the projects!</h2>
+      <h2 className={styles.intro}>Below are some of my web development projects. Just click on one of the projects if you want to know more about it!</h2>
       <section className={styles.cardContainer}>
         {projects.map((project, i) => <ProjectCard 
           data={project} 
