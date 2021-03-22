@@ -12,21 +12,23 @@ const Navbar = () => {
           <Link href="/">
             <a className={styles.logo} title="Home"><Logo color={'#4146B5'}/></a>
           </Link>
-          <Link href="/projects">
-            <a className={styles.a}>
-              <p className={router.pathname.includes('/projects') ? `${styles.active} ${styles.p}` : styles.p}>Projects</p>
-            </a>
-          </Link>
-          <Link href="/photography">
-            <a className={styles.a}>
-              <p className={router.pathname.includes('/photography') ? `${styles.active} ${styles.p}` : styles.p}>Photography</p>
-            </a>
-          </Link>
-          <Link href="/about">
-            <a className={styles.a}>
-              <p className={router.pathname.includes('/about') ? `${styles.active} ${styles.p}` : styles.p}>About</p>
-            </a>
-          </Link>
+          <div className={styles.container}>
+            <Link href="/projects">
+              <a className={styles.a}>
+                <p className={router.pathname.includes('/projects') ? `${styles.active} ${styles.p}` : styles.p}>Projects</p>
+              </a>
+            </Link>
+            <Link href="/photography">
+              <a className={styles.a}>
+                <p className={router.pathname.includes('/photography') ? `${styles.active} ${styles.p}` : styles.p}>Photography</p>
+              </a>
+            </Link>
+            <Link href="/about">
+              <a className={styles.a}>
+                <p className={router.pathname.includes('/about') ? `${styles.active} ${styles.p}` : styles.p}>About</p>
+              </a>
+            </Link>
+          </div>
         </nav>
     </header>
  )

@@ -11,6 +11,10 @@
   justify-content: flex-end;
 }
 
+.container {
+  display: flex;
+}
+
 .a {
   margin: 0 20px;
 }
@@ -41,26 +45,31 @@
 }
 
 @media (max-width: 470px) {
-  .header {
-    height: 140px;
+  .container {
+    height: 70px;
+    z-index: 3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 3px solid white;
+    justify-content: space-evenly;
   }
 
-  .nav {
+  .container:before {
+    content: "";
+    background: none;
+    border-top: 3px solid #4146B5;
     display: block;
-    text-align: center;
-  }
-
-  .logo svg {
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
   }
 
   .a {
-    display: inline-block;
-    margin: 24px 10px;
-  }
-
-  .p {
-    font-size: 16px;
+    margin: 8px 0;
   }
 }
