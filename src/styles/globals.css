@@ -53,3 +53,9 @@ h1 {
     text-decoration-thickness: 6px;
   }
 }
+
+@media (max-width: 470px) {
+  main {
+    padding: 20px 25px 230px;
+  }
+}

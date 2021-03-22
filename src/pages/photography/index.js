@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import fs from 'fs'
 import matter from 'gray-matter'
-import { AlbumCard } from '@components'
-import styles from './Albums.module.css'
+import { ImageCard } from '@components'
 
 const Photography = ({ albums }) => {
   albums.sort((a, b) => a.order - b.order)
@@ -15,8 +14,10 @@ const Photography = ({ albums }) => {
       <main>
         <h1>Photography</h1>
         <h2>Click on one of the albums below to see some of my work. I mainly do event photography but I also enjoy capturing the enviroment and people.</h2>
-        {albums.map((album, i) => <AlbumCard 
-          data={album} 
+        {albums.map((album, i) => <ImageCard 
+          url={`/photography/${album.slug}`}
+          image={`/albums/${album.slug}/main.jpg`}
+          title={album.title}
           key={i}
         />)}
       </main> 
