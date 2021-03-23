@@ -1,11 +1,9 @@
 .featured {
   color: #1f1f1f;
   font-size: 36px;
-  text-decoration: underline;
-  text-decoration-color: #4146B5;
   text-decoration-thickness: 5px;
   line-height: 1.1;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 .link {
