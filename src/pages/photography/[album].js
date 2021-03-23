@@ -5,6 +5,10 @@ import { ArrowAnchor } from '@components'
 import styles from './Album.module.css'
 
 const PhotoAlbum = ({ data, photos }) => {
+  const 
+    isEven = num => num % 2 === 0,
+    isOdd = num => Math.abs(num % 2) === 1
+
   return (  
     <>
       <Head>
@@ -17,7 +21,22 @@ const PhotoAlbum = ({ data, photos }) => {
         />
         <h1>{data.title}</h1>
         <section className={styles.container}>
-          {photos.map(photo => <img key={photo} className={styles.photo} src={`/albums/${data.slug}/${photo}`}></img>)}
+          <article className={styles.column}>
+            {photos.map((photo, i) => isEven(i) && <img 
+              key={photo} 
+              className={styles.photo} 
+              src={`/albums/${data.slug}/${photo}`} 
+              alt={photo}
+            ></img>)}
+          </article>
+          <article className={styles.column}>
+            {photos.map((photo, i) => isOdd(i) && <img 
+                key={photo} 
+                className={styles.photo} 
+                src={`/albums/${data.slug}/${photo}`} 
+                alt={photo}
+            ></img>)}          
+          </article>
         </section>
       </main>
     </>
