@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import fs from 'fs'
-import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import { getProject, getPaths } from '@helpers'
 import { ArrowAnchor, ProjectInfo } from '@components'
 import styles from './Project.module.css'
 
@@ -25,44 +24,24 @@ const Project = ({ content, data, images }) => {
         {data.embed && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
         {data.embed && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
         <h2>Images</h2>
-        {images.map(image => <img key={image} className={styles.image} src={`/projects/${data.slug}/${image}`} alt={image}></img>)}
+        {images.map(image => <img 
+          key={image} 
+          className={styles.image} 
+          src={`/projects/${data.slug}/${image}`} 
+          alt={image}
+        ></img>)}
       </main>
     </>
   )
 }
 
-export const getStaticPaths = async () => {
-  const files = fs.readdirSync('src/content/projects')
-  const paths = files.map(filename => ({
-    params: {
-      id: filename.replace('.md', '')
-    }
-  }))
+export const getStaticPaths = async () => ({
+  paths: getPaths('src/content/projects', 'id'),
+  fallback: false
+})
 
-  return {
-    paths,
-    fallback: false
-  }
-}
-
-export const getStaticProps = async ({ params: { id } }) => {
-  const markdown = fs
-    .readFileSync(`src/content/projects/${id}.md`)
-    .toString()
-
-  const images = fs.readdirSync(`public/projects/${id}`)
-  const parsedMarkdown = matter(markdown)
-
-  return {
-    props: {
-      content: parsedMarkdown.content,
-      data: {
-        slug: id,
-        ...parsedMarkdown.data
-      },
-      images
-    }
-  }
-}
+export const getStaticProps = async ({ params: { id } }) => ({
+  props: getProject(id)
+})
 
 export default Project

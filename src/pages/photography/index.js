@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import fs from 'fs'
-import matter from 'gray-matter'
+import { getMarkdownFolder } from '@helpers'
 import { ImageCard } from '@components'
 
 const Photography = ({ albums }) => {
@@ -25,27 +24,10 @@ const Photography = ({ albums }) => {
   )
 }
 
-export const getStaticProps = async () => {
-  const files = fs.readdirSync('src/content/albums')
-
-  const albums = files.map(file => {
-    const markdown = fs
-      .readFileSync(`src/content/albums/${file}`)
-      .toString()
-
-    const parsedMarkdown = matter(markdown)
-
-    return {
-      slug: file.replace('.md', ''),
-      ...parsedMarkdown.data
-    }
-  })
-
-  return {
-    props: {
-      albums
-    }
+export const getStaticProps = async () => ({
+  props: {
+    albums: getMarkdownFolder('src/content/albums')
   }
-}
+})
 
 export default Photography

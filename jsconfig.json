@@ -6,7 +6,8 @@
     "paths": {
       "@components": ["components"],
       "@icons": ["assets/icons"],
-      "@images": ["assets/images"]
+      "@images": ["assets/images"],
+      "@helpers": ["helpers"]
     }
   },
   "exclude": ["node_modules"]
