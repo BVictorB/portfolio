@@ -5,21 +5,19 @@
   align-items: flex-start;
 }
 
+.column {
+  width: 50%;
+}
+
 .photo {
   border-radius: 16px;
-  flex: 50%;
-  max-width: 50%;
+  width: 100%;
   padding: 6px;
   height: auto;
 }
 
-@media (max-width: 1000px) {
-  .container {
-    display: block;
-  }
-
-  .photo {
-    max-width: 100%;
-    padding: 6px 0;
+@media (max-width: 800px) {
+  .column {
+    width: 100%;
   }
 }

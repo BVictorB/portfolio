@@ -25,7 +25,7 @@ const Project = ({ content, data, images }) => {
         {data.embed && <a href={data.live} target="_blank"><h2>Live version</h2></a>}
         {data.embed && <iframe className={styles.embed} src={data.live} title={`Embed ${data.title} website`} />}
         <h2>Images</h2>
-        {images.map(image => <img key={image} className={styles.image} src={`/projects/${data.slug}/${image}`}></img>)}
+        {images.map(image => <img key={image} className={styles.image} src={`/projects/${data.slug}/${image}`} alt={image}></img>)}
       </main>
     </>
   )
