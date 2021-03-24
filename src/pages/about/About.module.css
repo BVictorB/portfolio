@@ -1,0 +1,53 @@
+.firstTitle {
+  margin-top: 32px;
+}
+
+.textblock {
+  margin: 20px 0;
+  font-size: 17px;
+  max-width: 600px;
+}
+
+.age {
+  position: relative;
+  color: #4146B5;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.age:before {
+  content: 'Yeah this actually updates :)';
+  position: absolute;
+  background-color: #4146B5;
+  color: white;
+  top: -65px;
+  left: -60px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+  line-height: 1;
+  padding: 10px 0;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 150ms ease-in-out;
+}
+
+.age:after {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: 0;
+  border: solid 10px transparent;
+  border-top-color: #4146B5;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 150ms ease-in-out;
+}
+
+.age:hover:before, .age:hover:after {
+  opacity: 1;
+  transform: translateY(0)
+}

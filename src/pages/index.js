@@ -23,7 +23,7 @@ const Home = ({ projects, albums }) => {
           favorite={projectSpotlight.favorite}
         />
         <Link href="/projects">
-          <a className={styles.link} title="all projects">All projects &rarr;</a>
+          <a className={styles.link} title="all projects">See all projects<span className={styles.arrow}>&rarr;</span></a>
         </Link>
         <h2 className={styles.featured}>Featured photography album</h2>
         <ImageCard 
@@ -32,7 +32,7 @@ const Home = ({ projects, albums }) => {
           title={albumSpotlight.title}
         />
         <Link href="/photography">
-          <a className={styles.link} title="all albums">All albums &rarr;</a>
+          <a className={styles.link} title="all albums">See all albums<span className={styles.arrow}>&rarr;</span></a>
         </Link>
       </main>
     </>
