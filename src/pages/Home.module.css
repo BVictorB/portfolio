@@ -7,14 +7,24 @@
 }
 
 .link {
-  color: #1f1f1f;
-  text-decoration: underline;
-  text-decoration-color: #4146B5;
+  display: block;
+  margin-bottom: 20px;
   font-size: 20px;
-  font-weight: 600;
   transition: color 150ms ease-in-out;
 }
 
 .link:hover {
   color: #4146B5;
+}
+
+.link:hover .arrow {
+  transform: translateX(4px);
+}
+
+.arrow {
+  margin-left: 6px;
+  display: inline-block;
+  font-size: 20px;
+  color: #4146B5;
+  transition: transform 150ms ease-in-out;
 }
