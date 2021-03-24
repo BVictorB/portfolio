@@ -61,7 +61,7 @@ const About = () => {
       <main>
         <h1>About</h1>
         <p className={styles.textblock}>
-          As you have probably figured out by now, my name is Victor Boucher. I am a {age} year old guy from (and living in) Amsterdam.
+          As you have probably figured out by now, my name is Victor Boucher. I am a <span className={styles.age}>{age}</span> year old guy from (and living in) Amsterdam.
           I am currently studying Communication and Multimedia Design at the Amsterdam University of Applied Sciences. 
           I also work here as a student assistant where I help other students with their programming during several different courses.
           Since the beginning of my study I have also been working part-time at Coolblue (a consumer electronics retailer). 
