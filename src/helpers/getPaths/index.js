@@ -8,8 +8,6 @@ const getPaths = (dir, param) => {
     }
   }))
 
-  console.log(paths)
-
   return paths
 }
 

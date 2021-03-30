@@ -5,7 +5,10 @@ const IconContainer = ({ icons }) => (
   <div className={styles.icons}>
     {icons.map((icon, index) => {
       const IconComponent = iconComponents[icon]
-      return <IconComponent key={index} color={'white'} />
+      return <IconComponent 
+        key={index} 
+        color={'white'} 
+      />
     })}
   </div>
 )
