@@ -24,12 +24,12 @@ const Project = ({ content, data, images }) => {
           <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
           <ProjectInfo data={data} />
         </div>
-        <button
+        {!data.private && <button
           className={styles.viewCode}
           onClick={() => setViewCode(prevState => !prevState)}
         >
           {viewCode ? 'Hide code' : 'View code'}
-        </button>
+        </button>}
         {viewCode && <>
           <a 
             href={`https://github1s.com/BVictorB/${data.slug}`}
