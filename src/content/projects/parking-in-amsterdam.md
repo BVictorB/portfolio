@@ -3,7 +3,6 @@ order: 10
 title: Parking in Amsterdam
 description: A data visualization about parking in Amsterdam. You can compare parking garages with each other or with districts in this web-application.
 timestamp: 1604228400
-repo: https://github.com/BVictorB/frontend-applications
 live: https://bvictorb-garage.netlify.app/
 tech: Html, Sass, JavaScript, React, D3
 ---

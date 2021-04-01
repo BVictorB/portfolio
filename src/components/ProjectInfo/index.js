@@ -2,6 +2,7 @@ import { IconContainer } from '@components'
 import styles from './ProjectInfo.module.css'
 
 const ProjectInfo = ({ data }) => {
+  console.log(data.slug)
   const 
     date = new Date(data.timestamp * 1000),
     year = date.getFullYear(),
@@ -19,14 +20,14 @@ const ProjectInfo = ({ data }) => {
       >
         Live version <span className={styles.arrow}>&rarr;</span>
       </a>}
-      {data.repo && <a 
+      <a 
         className={styles.link} 
-        href={data.repo} 
+        href={`https://github.com/BVictorB/${data.slug}`}
         target="_blank" 
         rel="noopener"
       >
         GitHub repository <span className={styles.arrow}>&rarr;</span>
-      </a>}
+      </a>
       {data.tech && <IconContainer 
         className={styles.tech} 
         icons={data.tech.split(', ')}

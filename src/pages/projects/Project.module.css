@@ -34,3 +34,22 @@
   margin: 12px 0 32px;
   box-shadow: 0 1px 19px rgb(0 0 0 / 10%), 0 1px 9px rgb(0 0 0 / 10%);
 }
+
+.viewCode {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background: #4146B5;
+  margin-bottom: 32px;
+  transition: transform 150ms ease-in-out;
+}
+
+.viewCode:hover, .viewCode:focus {
+  outline: none;
+  transform: scale(1.02) translateY(-3px);
+}
