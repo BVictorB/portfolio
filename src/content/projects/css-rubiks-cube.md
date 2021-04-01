@@ -3,7 +3,6 @@ order: 8
 title: CSS Rubik's Cube
 description: A Rubik's cube created with just CSS, using smart CSS calculations/functions and 3D transforms. It can animate by ajusting your window size. 
 timestamp: 1612177200
-repo: https://github.com/BVictorB/css-to-the-rescue-2021
 live: https://bvictorb.github.io/css-to-the-rescue-2021/
 tech: Html, Css
 embed: true

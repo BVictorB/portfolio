@@ -19,9 +19,9 @@ const ProjectInfo = ({ data }) => {
       >
         Live version <span className={styles.arrow}>&rarr;</span>
       </a>}
-      {data.repo && <a 
+      {!data.private && <a 
         className={styles.link} 
-        href={data.repo} 
+        href={`https://github.com/BVictorB/${data.slug}`}
         target="_blank" 
         rel="noopener"
       >

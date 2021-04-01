@@ -5,6 +5,7 @@ description: iOS / Android application created with React Native in combination 
 timestamp: 1608462000
 tech: TypeScript, React, Redux, Wip
 favorite: true
+private: true
 ---
 
 A friend of mine and me wanted to work on a project together for a while, after some time this concept came up in my head. I started doing some research and quickly found out that there are not that many options regarding a matching-like app for musicians and people in the music industry in general. We think that we can create a product that could help many people in the music industry with finding other musicians to create awesome music or events together.  
