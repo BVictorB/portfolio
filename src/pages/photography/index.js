@@ -9,6 +9,7 @@ const Photography = ({ albums }) => {
     <>
       <Head>
         <title>Victor Boucher | Photography</title>
+        <meta name="description" content="Some of my photography work. Separated in different albums. I mainly do event photography but I also enjoy capturing the enviroment and people."/>
       </Head>
       <main>
         <h1>Photography</h1>

@@ -10,6 +10,7 @@ const Projects = ({ projects }) => {
     <>
     <Head>
       <title>Victor Boucher | Projects</title>
+      <meta name="description" content="Some of my web development projects, each with some information about the case and technologies and the GitHub repo / live version links."/>
     </Head>
     <main>
       <h1>Projects</h1>
