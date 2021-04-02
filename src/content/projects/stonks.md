@@ -1,10 +1,10 @@
 ---
-order: 5
+order: 4
 title: Stonks
 description: A web application that lets you get more information about stocks. You can look up stocks and get live pricing, a daily quote, news and notifications when a certain stock drops below your desired price.
 timestamp: 1615201200
 live: https://victor-pwa.herokuapp.com/
-tech: Html, Css, JavaScript, NodeJS, MongoDB
+tech: Html, Sass, JavaScript, NodeJS, MongoDB
 embed: true
 ---
 
