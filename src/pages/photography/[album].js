@@ -7,6 +7,7 @@ const PhotoAlbum = ({ data, photos }) => (
   <>
     <Head>
       <title>Photography | {data.title}</title>
+      <meta name="description" content={`${data.title} photography album. Some of my ${data.title} photography work.`}/>
     </Head>
     <main>
       <ArrowAnchor

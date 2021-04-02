@@ -12,6 +12,7 @@ const Project = ({ content, data, images }) => {
     <>
       <Head>
         <title>Projects | {data.title}</title>
+        <meta name="description" content={data.description}/>
       </Head>
       <main>
         <ArrowAnchor
