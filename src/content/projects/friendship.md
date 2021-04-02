@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 6
 title: Friendship
 description: Friendship is a website where you can match with people that have the same interests, it is a fully working web-application where you can register, and match with users. Friendship automatically suggests other people based different aspects.
 timestamp: 1586685600

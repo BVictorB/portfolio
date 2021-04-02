@@ -1,23 +1,24 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 32px 0;
-  align-items: flex-start;
+  line-height: 0;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-gap: 16px;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
 }
 
-.column {
-  width: 50%;
-}
-
-.photo {
-  border-radius: 16px;
+.container img {
+  margin: 8px 0;
   width: 100%;
-  padding: 6px;
   height: auto;
+  border-radius: 16px;
 }
 
 @media (max-width: 800px) {
-  .column {
-    width: 100%;
+  .container {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
   }
 }

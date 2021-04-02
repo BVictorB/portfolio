@@ -19,7 +19,6 @@ const Projects = ({ projects }) => {
       <section className={styles.cardContainer}>
         {projects.map((project, i) => <ProjectCard 
           data={project} 
-          favorite={project.favorite}
           key={i}
         />)}
       </section>
@@ -27,7 +26,6 @@ const Projects = ({ projects }) => {
   </>
   )
 }
-
 
 export const getStaticProps = async () => ({
   props: {

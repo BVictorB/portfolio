@@ -3,13 +3,13 @@ import { IconContainer } from '@components'
 import styles from './ProjectCard.module.css'
 import { Trophy } from '@images'
 
-const ProjectCard = ({ data, favorite }) => {
+const ProjectCard = ({ data }) => {
   const date = new Date(data.timestamp * 1000)
 
   return (
     <Link href={`/projects/${data.slug}`}>
       <a className={styles.card}>
-        {favorite && <div className={styles.favorite}>
+        {data.favorite && <div className={styles.favorite}>
           <div className={styles.favoriteText}><p>Personal favorite</p></div>
           <div className={styles.favoriteIcon}><Trophy /></div>
         </div>}
@@ -26,6 +26,5 @@ const ProjectCard = ({ data, favorite }) => {
     </Link>
   )
 }
-    
 
 export default ProjectCard
