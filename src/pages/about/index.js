@@ -78,6 +78,7 @@ const About = () => {
            sports (cycling, boxing, fitness, football) and learning new things (I am learning Spanish at the moment).
         </p>
         <a href="/resume.pdf" className={styles.link} title="download resume" download><span className={styles.arrow}>&darr;</span>Download my resume</a>
+        <img className={styles.avatar} src="/victor.jpg" alt="smiling victor"></img>
         <h2 className={styles.firstTitle}>Experience</h2>
         <Timeline events={experience} />
         <h2>Education</h2>
