@@ -14,8 +14,19 @@ const App = ({ Component, pageProps }) => {
         <meta name="msapplication-TileColor" content="#4146b5"/>
         <meta name="theme-color" content="#ffffff"/>
         <meta name="description" content="My personal portfolio website. All my web development projects, some photography and info can be found on this website."/>
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,400&display=swap" rel="stylesheet"/>
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+            type="text/css"
+          />
+        </noscript>
       </Head>
       <Navbar/>
       <Component {...pageProps} />

@@ -74,3 +74,15 @@
   color: #4146B5;
   transition: transform 150ms ease-in-out;
 }
+
+.avatar {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: border-radius 200ms ease-in-out;
+  margin-top: 16px;
+}

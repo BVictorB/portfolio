@@ -35,6 +35,27 @@
   box-shadow: 0 1px 19px rgb(0 0 0 / 10%), 0 1px 9px rgb(0 0 0 / 10%);
 }
 
+.embedCode {
+  width: 100%;
+  height: 860px;
+  border: none;
+  border-radius: 16px;
+  margin: 12px 0 32px;
+  box-shadow: 0 1px 19px rgb(0 0 0 / 10%), 0 1px 9px rgb(0 0 0 / 10%);
+  animation: fadein 250ms ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .viewCode {
   cursor: pointer;
   padding: 10px 20px;

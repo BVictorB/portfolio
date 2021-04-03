@@ -39,22 +39,24 @@ const Project = ({ content, data, images }) => {
             <h2>Code</h2>
           </a>
           <iframe 
-            className={styles.embed} 
+            className={styles.embedCode} 
             src={`https://github1s.com/BVictorB/${data.slug}`} 
             title={`Embed ${data.title} code`} 
           />
         </>}
-        {data.embed && <a 
-          href={data.live} 
-          target="_blank"
-        >
-          <h2>Live version</h2>
-        </a>}
-        {data.embed && <iframe 
-          className={styles.embed} 
-          src={data.live} 
-          title={`Embed ${data.title} website`} 
-        />}
+        {data.embed && <>
+          <a 
+            href={data.live} 
+            target="_blank"
+          >
+            <h2>Live version</h2>
+          </a>
+          <iframe 
+            className={styles.embed} 
+            src={data.live} 
+            title={`Embed ${data.title} website`} 
+          />
+        </>}
         <h2>Images</h2>
         {images.map(image => <img 
           key={image} 
