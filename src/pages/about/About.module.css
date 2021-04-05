@@ -1,11 +1,11 @@
 .firstTitle {
-  margin-top: 32px;
+  margin-top: 2em;
 }
 
 .textblock {
-  margin: 20px 0;
-  font-size: 17px;
-  max-width: 600px;
+  margin: 1.25rem 0;
+  font-size: 1.1em;
+  max-width: 38rem;
 }
 
 .age {
@@ -21,29 +21,29 @@
   position: absolute;
   background-color: #4146B5;
   color: white;
-  top: -65px;
-  left: -60px;
-  border-radius: 10px;
+  top: -4em;
+  left: -4.5em;
+  border-radius: .5em;
   text-align: center;
-  width: 150px;
+  width: 10em;
   line-height: 1;
-  padding: 10px 0;
+  padding: .75em 0;
   pointer-events: none;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-1.25em);
   transition: all 150ms ease-in-out;
 }
 
 .age:after {
   content: '';
   position: absolute;
-  top: -11px;
+  top: -.5em;
   left: 0;
-  border: solid 10px transparent;
+  border: solid .625em transparent;
   border-top-color: #4146B5;
   pointer-events: none;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-1.25em);
   transition: all 150ms ease-in-out;
 }
 
@@ -54,7 +54,7 @@
 
 .link {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   font-size: 20px;
   transition: color 150ms ease-in-out;
 }
@@ -64,13 +64,13 @@
 }
 
 .link:hover .arrow {
-  transform: translateY(4px);
+  transform: translateY(.25rem);
 }
 
 .arrow {
-  margin-right: 6px;
+  margin-right: .5rem;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em;
   color: #4146B5;
   transition: transform 150ms ease-in-out;
 }
@@ -78,11 +78,11 @@
 .avatar {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: 320px;
+  max-width: 38em;
+  height: 20em;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 1em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: border-radius 200ms ease-in-out;
-  margin-top: 16px;
+  margin-top: 1em;
 }

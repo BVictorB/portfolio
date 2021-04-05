@@ -13,12 +13,12 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;
+  width: .5em;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #4146B5;
-  border-radius: 6px;
+  border-radius: .5em;
 }
 
 a {
@@ -28,34 +28,34 @@ a {
 
 main {
   width: 100%;
-  max-width: 1000px;
+  max-width: 64em;
   margin: 0 auto;
-  padding: 75px 25px 200px;
+  padding: 5em 1.5em 12.5em;
 }
 
 h1 {
   color: #1f1f1f;
-  font-size: 82px;
+  font-size: 5em;
   text-decoration: underline;
   text-decoration-color: #4146B5;
-  text-decoration-thickness: 8px;
+  text-decoration-thickness: .5rem;
   line-height: 1.1;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 64em) {
   main {
-    padding: 20px 25px 175px;
+    padding: 1.25em 2em 11em;
   }
 
   h1 {
-    font-size: 50px;
-    text-decoration-thickness: 6px;
+    font-size: 3em;
+    text-decoration-thickness: .4rem;
   }
 }
 
 @media (max-width: 470px) {
   main {
-    padding: 20px 25px 230px;
+    padding: 1.25em 1.5em 14em;
   }
 }

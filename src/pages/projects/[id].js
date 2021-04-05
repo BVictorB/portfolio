@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import { getProject, getPaths } from '@helpers'
-import { ArrowAnchor, ProjectInfo } from '@components'
+import { ArrowAnchor, ProjectInfo, Embed } from '@components'
 import styles from './Project.module.css'
 
 const Project = ({ content, data, images }) => {
@@ -26,37 +26,21 @@ const Project = ({ content, data, images }) => {
           <ProjectInfo data={data} />
         </div>
         {!data.private && <button
-          className={styles.viewCode}
+          className={styles.button}
           onClick={() => setViewCode(prevState => !prevState)}
         >
           {viewCode ? 'Hide code' : 'View code'}
         </button>}
-        {viewCode && <>
-          <a 
-            href={`https://github1s.com/BVictorB/${data.slug}`}
-            target="_blank"
-          >
-            <h2>Code</h2>
-          </a>
-          <iframe 
-            className={styles.embedCode} 
-            src={`https://github1s.com/BVictorB/${data.slug}`} 
-            title={`Embed ${data.title} code`} 
-          />
-        </>}
-        {data.embed && <>
-          <a 
-            href={data.live} 
-            target="_blank"
-          >
-            <h2>Live version</h2>
-          </a>
-          <iframe 
-            className={styles.embed} 
-            src={data.live} 
-            title={`Embed ${data.title} website`} 
-          />
-        </>}
+        {viewCode && <Embed 
+          title={'Code'}
+          url={`https://github1s.com/BVictorB/${data.slug}`}
+          frameTitle={`Embed ${data.title} code`}
+        />}
+        {data.embed && <Embed 
+          title={'Live version'}
+          url={data.live}
+          frameTitle={`Embed ${data.title} website`}
+        />}
         <h2>Images</h2>
         {images.map(image => <img 
           key={image} 

@@ -3,27 +3,33 @@
   bottom: 0;
   background: #7b41b5;
   width: 100%;
-  height: 150px;
+  height: 10em;
   display: flex;
   color: white;
 }
 
 .container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 64em;
   margin: 0 auto;
-  padding: 50px 25px;
+  padding: 3.5em 1.5em;
   display: flex;
   justify-content: center;
 }
 
 .link {
-  width: 50px;
-  margin: 0 12.5px;
+  width: 3em;
+  margin: 0 1em;
+  transition: all 150ms ease-in-out;
+}
+
+.link:hover, .link:focus {
+  opacity: .7;
+  transform: scale(1.02) translateY(-.2em);
 }
 
 @media (max-width: 470px) {
   .footer {
-    height: 220px;
+    height: 14em;
   }
 }
