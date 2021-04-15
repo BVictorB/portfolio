@@ -1,13 +1,13 @@
 .header {
-  height: 100px;
+  height: 6em;
 }
 
 .nav {
   width: 100%;
-  max-width: 1440px;
+  max-width: 90em;
   margin: 0 auto;
   display: flex;
-  padding: 26px;
+  padding: 1.5em;
   justify-content: flex-end;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .a {
-  margin: 0 20px;
+  margin: 0 1.25em;
 }
 
 .a:last-child {
@@ -28,11 +28,11 @@
 }
 
 .logo svg {
-  height: 50px;
+  height: 3em;
 }
 
 .p {
-  margin-top: 10px;
+  margin-top: .6rem;
   color: #1f1f1f;
   font-weight: 600;
   font-size: 18px;
@@ -41,26 +41,26 @@
 .p.active {
   text-decoration: underline;
   text-decoration-color: #4146B5;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: .25rem;
 }
 
 @media (max-width: 470px) {
   .container {
-    height: 70px;
+    height: 4em;
     z-index: 3;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: white;
-    border-top: 3px solid white;
+    border-top: .25em solid white;
     justify-content: space-evenly;
   }
 
   .container:before {
     content: "";
     background: none;
-    border-top: 3px solid #4146B5;
+    border-top: .25em solid #4146B5;
     display: block;
     position: absolute;
     top: 0;
@@ -70,6 +70,6 @@
   }
 
   .a {
-    margin: 8px 0;
+    margin: .5em 0;
   }
 }

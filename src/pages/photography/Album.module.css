@@ -9,10 +9,10 @@
 }
 
 .container img {
-  margin: 8px 0;
+  margin: .5em 0;
   width: 100%;
   height: auto;
-  border-radius: 16px;
+  border-radius: 1em;
 }
 
 @media (max-width: 800px) {

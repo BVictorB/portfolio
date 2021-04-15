@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   width: 35%;
-  height: 250px;
-  padding: 24px 32px;
-  border-radius: 16px;
+  height: 16em;
+  padding: 1.5em 2em;
+  border-radius: 1em;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #4146B5;
   margin-left: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 64em) {
   .container {
-    margin: 32px 0 0;
+    margin: 2em 0 0;
     width: 100%;
   }
 }
@@ -28,5 +28,5 @@
 }
 
 .link:hover .arrow {
-  transform: translateX(4px);
+  transform: translateX(.25em);
 }

@@ -4,9 +4,9 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  margin: 24px 0;
-  padding: 6px 24px 20px;
-  border-radius: 16px;
+  margin: 1.5em 0;
+  padding: .25em 1.5em 1.25em;
+  border-radius: 1em;
   color: white;
   transition: transform 150ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -18,9 +18,9 @@
 .image {
   position: relative;
   display: block;
-  margin: 24px 0 0;
-  border-radius: 16px;
-  height: 300px;
+  margin: 1.5em 0 0;
+  border-radius: 1em;
+  height: 19em;
   width: 100%;
   max-width: 100%;
   object-fit: cover;
@@ -29,11 +29,11 @@
 }
 
 .description {
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
 }
 
 .card p {
-  max-width: 500px;
+  max-width: 28em;
 }
 
 .card:hover, 
@@ -48,7 +48,7 @@
 
 .card:hover .favoriteText,
 .card:focus .favoriteText {
-  width: 175px;
+  width: 11rem;
   opacity: 1;
 }
 
@@ -59,46 +59,45 @@
 }
 
 .year {
-  font-size: 16px;
   position: relative;
-  top: 14px;
-  margin-bottom: 16px;
+  top: .75em;
+  margin-bottom: 1em;
 }
 
 .card h2 {
-  font-size: 48px;
-  max-width: 550px;
+  font-size: 3em;
+  max-width: 28em;
   line-height: 1;
-  margin-bottom: 12px;
+  margin-bottom: .75rem;
 }
 
 .favorite {
   display: flex;
   position: absolute;
-  top: -45px;
-  right: -5px;
+  top: -2em;
+  right: -.5em;
   z-index: 2;
 }
 
 @media (min-width: 1100px) {
   .favorite {
-    right: -45px;
+    right: -2em;
   }
 }
 
 .favoriteText {
-  margin-top: 15px;
-  padding: 5px 14px 0 0;
-  height: 45px;
+  margin-top: .75rem;
+  padding: .25rem 1rem 0 0;
+  height: 2.5rem;
   width: 0;
   opacity: 0;
   text-align: right;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25em;
   background: #272a6c;
   background-image: linear-gradient(#333893, #272a6c);
-  border-radius: 16px 0 0 16px;
-  transform: translateX(10px);
+  border-radius: 1rem 0 0 1rem;
+  transform: translateX(1rem);
   transition: all 200ms ease-in-out;
 }
 
@@ -108,7 +107,8 @@
 }
 
 .favoriteIcon {
-  width: 75px;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
   background: #272a6c;
   background-image: linear-gradient(#333893, #272a6c);
@@ -116,31 +116,31 @@
 
 .favoriteIcon svg {
   display: block;
-  margin: 10px auto;
-  height: 55px;
+  margin: .5em auto;
+  height: 3em;
   transition: transform 800ms cubic-bezier(0.7, -0.6, 0.3, 1.6);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 64em) {
   .card {
-    height: 350px;
+    height: 22em;
   }
 
   .card p {
-    max-width: 300px;
+    max-width: 18em;
   }
 
   .card h2 {
-    max-width: 450px;
+    max-width: 8em;
   }
 
   .image {
     margin: 0;
     position: absolute;
-    width: 450px;
-    top: 25px;
-    right: 0px;
-    border-radius: 16px 0 0 16px;
+    width: 28em;
+    top: 1.5em;
+    right: 0;
+    border-radius: 1em 0 0 1em;
   }
 
   .card:hover {
@@ -148,7 +148,7 @@
   }
   
   .card:hover .image {
-    right: 25px;
-    border-radius: 16px;
+    right: 1.5em;
+    border-radius: 1em;
   }
 }
