@@ -37,7 +37,7 @@
 .age:after {
   content: '';
   position: absolute;
-  top: -.5em;
+  top: -.6em;
   left: 0;
   border: solid .625em transparent;
   border-top-color: #4146B5;
