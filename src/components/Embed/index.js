@@ -5,6 +5,7 @@ const Embed = ({ title, url, frameTitle }) => (
     <a 
       href={url}
       target="_blank"
+      className={styles.link}
     >
       <h2>{title}</h2>
     </a>

@@ -13,6 +13,8 @@
   background: #4146B5;
   background-image: linear-gradient(#4146B5, #7b41b5);
   background-attachment: fixed;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .image {

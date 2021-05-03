@@ -17,6 +17,7 @@
 
 .a {
   margin: 0 1.25em;
+  text-decoration: none;
 }
 
 .a:last-child {

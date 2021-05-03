@@ -1,5 +1,5 @@
 ---
-order: 8
+order: 9
 title: CSS Rubik's Cube
 description: A Rubik's cube created with just CSS, using smart CSS calculations/functions and 3D transforms. It can animate by ajusting your window size. 
 timestamp: 1612177200

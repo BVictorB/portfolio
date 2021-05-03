@@ -8,6 +8,11 @@
   animation: fadein 250ms ease-in-out;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
 @keyframes fadein {
   from {
     transform: translateY(-1.5em);

@@ -1,5 +1,5 @@
 ---
-order: 6
+order: 7
 title: Stonks
 description: A web application that lets you get more information about stocks. You can look up stocks and get live pricing, a daily quote, news and notifications when a certain stock drops below your desired price.
 timestamp: 1615201200

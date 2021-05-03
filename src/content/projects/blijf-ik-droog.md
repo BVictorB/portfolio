@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 title: Blijf ik droog?
 description: A web-application that lets you know how late you should leave to avoid the rain. The usage is really simple but powerful. You just have to type in your location (or use GPS) and the amount of minutes that your journey will take. 
 timestamp: 1612263600

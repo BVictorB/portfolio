@@ -23,6 +23,12 @@
   transition: transform 150ms ease-in-out;
 }
 
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .link:hover {
   color: #d2d4ff;
 }
