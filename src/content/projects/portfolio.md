@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: Portfolio
 description: My personal portfolio website (this website), with some of my (school) projects on it. Everything is automatically rendered from Markdown files (each project and photo category has its own Markdown file with data in it that gets rendered).
 timestamp: 1615806000

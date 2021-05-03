@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 10
 title: Eenwoud
 description: A data visualization about trees with a special story. The trees are plotted onto a map, you can look around on this map and get more info about trees (the original location, pictures, an audio story and more).
 timestamp: 1607598000
