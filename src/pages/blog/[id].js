@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import { getArticle, getPaths } from '@helpers'
-import { ArrowAnchor } from '@components'
+import { ArrowAnchor, CodeBlock } from '@components'
 import styles from './Blog.module.css'
 
 const Article = ({ content, data }) => (
@@ -16,7 +16,7 @@ const Article = ({ content, data }) => (
         anchorHref="/blog"
       />
         <h1>{data.title}</h1>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown renderers={{ code: CodeBlock }}>{content}</ReactMarkdown>
     </main>
   </>
 )
