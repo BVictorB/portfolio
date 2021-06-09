@@ -1,6 +1,6 @@
 ---
 title: Progressive Enhancement
-order: 2
+order: 3
 ---
 
 ...

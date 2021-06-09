@@ -15,6 +15,7 @@ const Blog = ({ articles }) => {
         <h2>Articles written during the Communication and Multimedia Design minor Web Design and Development. Click on one of the cards to read the article!</h2>
         {articles.map((article, i) => <ImageCard 
           url={`/blog/${article.slug}`}
+          image={`/articles/${article.slug}.jpg`}
           title={article.title}
           key={i}
         />)}
