@@ -1,5 +1,6 @@
 export { default as ImageCard } from './ImageCard'
 export { default as ArrowAnchor } from './ArrowAnchor'
+export { default as CodeBlock } from './CodeBlock'
 export { default as Footer } from './Footer'
 export { default as IconContainer } from './IconContainer'
 export { default as Navbar } from './Navbar'
