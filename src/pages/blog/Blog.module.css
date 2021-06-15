@@ -1,3 +1,7 @@
 .container {
   max-width: 42em;
 }
+
+.container img {
+  width: 100%;
+}
