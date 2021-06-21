@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: GeoBattle
 description: GeoBattle is a real-time web application where you can battle your friends for the most points. You gain points by correctly guessing a location based on a satellite image. I've used websockets to transfer all the data real-time between the server and client(s).
 timestamp: 1619690400
