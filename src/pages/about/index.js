@@ -5,6 +5,11 @@ import styles from './About.module.css'
 const About = () => {
   const experience = [
     {
+      date: 'September 2021 - Present',
+      info: 'Frontend development internship',
+      at: 'Dept Agency'
+    },
+    {
       date: 'September 2020 - Present',
       info: 'Student assistant for CMD frontend courses',
       at: 'Amsterdam University of Applied Sciences'
@@ -20,7 +25,7 @@ const About = () => {
       at: 'Boucher.pics'
     },
     {
-      date: 'October 2018 - Present',
+      date: 'October 2018 - August 2021',
       info: 'Allround employee',
       at: 'Coolblue'
     },
