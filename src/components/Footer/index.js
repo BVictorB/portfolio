@@ -6,7 +6,7 @@ const Footer = () => (
     <section className={styles.container}>
       <a 
         className={styles.link} 
-        href="https://github.com/BVictorB" 
+        href="https://github.com/victorboucher" 
         target="_blank" 
         rel="noopener" 
         title="GitHub"

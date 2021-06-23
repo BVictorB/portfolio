@@ -21,7 +21,7 @@ const ProjectInfo = ({ data }) => {
       </a>}
       {!data.private && <a 
         className={styles.link} 
-        href={`https://github.com/BVictorB/${data.slug}`}
+        href={`https://github.com/victorboucher/${data.slug}`}
         target="_blank" 
         rel="noopener"
       >

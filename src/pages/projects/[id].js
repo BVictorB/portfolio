@@ -34,7 +34,7 @@ const Project = ({ content, data, images }) => {
         </button>}
         {viewCode && <Embed 
           title={'Code'}
-          url={`https://github1s.com/BVictorB/${data.slug}`}
+          url={`https://github1s.com/victorboucher/${data.slug}`}
           frameTitle={`Embed ${data.title} code`}
         />}
         {data.embed && <Embed 
