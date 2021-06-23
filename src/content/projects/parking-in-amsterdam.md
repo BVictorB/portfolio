@@ -4,7 +4,7 @@ title: Parking in Amsterdam
 description: A data visualization about parking in Amsterdam. You can compare parking garages with each other or with districts in this web-application.
 timestamp: 1604228400
 live: https://bvictorb-garage.netlify.app/
-tech: Html, Sass, JavaScript, React, D3
+tech: React, Sass, JavaScript, D3
 ---
 
 This is the last course of the three courses (functional programming, frontend data and frontend applications) for this project. In this course we started working with frontend frameworks (in my case React). I continued working on the data visualization but made everything work properly with states and everything in React. Working with React was new for me, but it did not take long to understand it. It made me very productive, and it was a lot easier to achieve the same results as before, but with less code.  

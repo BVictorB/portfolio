@@ -7,6 +7,7 @@ import styles from './Project.module.css'
 
 const Project = ({ content, data, images }) => {
   const [viewCode, setViewCode] = useState(false)
+  const js = typeof window !== 'undefined'
 
   return (
     <>
@@ -25,7 +26,7 @@ const Project = ({ content, data, images }) => {
           <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
           <ProjectInfo data={data} />
         </div>
-        {!data.private && <button
+        {!data.private && js && <button
           className={styles.button}
           onClick={() => setViewCode(prevState => !prevState)}
         >

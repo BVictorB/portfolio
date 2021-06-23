@@ -4,7 +4,7 @@ title: Portfolio
 description: My personal portfolio website (this website), with some of my (school) projects on it. Everything is automatically rendered from Markdown files (each project and photo category has its own Markdown file with data in it that gets rendered).
 timestamp: 1615806000
 live: https://victorboucher.dev/
-tech: Html, Css, React, Next
+tech: React, Css, Next
 ---
 
 After watching a video on YouTube created by Ben Awad (a YouTuber that makes videos about programming), where he creates a kind of blog using React with Next using Markdown files, I wanted to create my portfolio site the same way. I really liked the idea of just having to create a new Markdown file when I want to add a new project, it felt almost like creating your own CMS where it is easy as pie to add new content. Every project and photography album is a single Markdown file which gets automatically rendered using the code in the pages/projects and pages/photography folders.  

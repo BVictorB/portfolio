@@ -1,10 +1,11 @@
 ---
-order: 3
+order: 1
 title: GeoBattle
 description: GeoBattle is a real-time web application where you can battle your friends for the most points. You gain points by correctly guessing a location based on a satellite image. I've used websockets to transfer all the data real-time between the server and client(s).
 timestamp: 1619690400
 live: https://geobattle.victorboucher.dev/
-tech: Html, Sass, TypeScript, React, NodeJS, MongoDB
+tech: React, Sass, TypeScript, NodeJS, MongoDB
+favorite: true
 embed: true
 ---
 
