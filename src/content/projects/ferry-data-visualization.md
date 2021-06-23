@@ -3,7 +3,7 @@ order: 5
 title: Ferry data visualization
 description: A data visualization that was made in just two days. The visualization shows how many people actually wear a facemask on the ferry, or take it off too early. Based on type of travel (pedestrian, moped, bicycle).
 timestamp: 1606820400
-live: https://ferry-data-visualization.netlify.app/
+live: https://ferry.victorboucher.dev/
 tech: React, Sass, JavaScript, D3
 ---
 
