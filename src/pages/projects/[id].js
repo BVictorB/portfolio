@@ -23,7 +23,12 @@ const Project = ({ content, data, images }) => {
         <h1>{data.title}</h1>
         <h2>{data.description}</h2>
         <div className={styles.container}>
-          <ReactMarkdown className={styles.text}>{content}</ReactMarkdown>
+          <ReactMarkdown 
+            className={styles.text} 
+            renderers={{link: props => <a href={props.href} target="_blank">{props.children}</a>}}
+          >
+            {content}
+          </ReactMarkdown>
           <ProjectInfo data={data} />
         </div>
         {!data.private && js && <button
