@@ -4,7 +4,7 @@ title: Eenwoud
 description: A data visualization about trees with a special story. The trees are plotted onto a map, you can look around on this map and get more info about trees (the original location, pictures, an audio story and more).
 timestamp: 1607598000
 live: https://bvictorb-eenwoud.netlify.app/
-tech: Html, Sass, JavaScript, React, D3
+tech: React, Sass, JavaScript, D3
 ---
 
 This project was created for Lobke Meekes (the creator of 'Eenwoud'). Eenwoud is a concept where people can register trees so they get re-planted in a big forest with trees that have a special story. We had to create an interactive web-application that displays all the trees, we had to visualize the data that was available to us.  
