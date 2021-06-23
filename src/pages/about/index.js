@@ -21,7 +21,7 @@ const About = () => {
     },
     {
       date: 'April 2019 - Present',
-      info: 'Event photography',
+      info: 'Photographer',
       at: 'Boucher.pics'
     },
     {
