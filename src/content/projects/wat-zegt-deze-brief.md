@@ -16,5 +16,4 @@ We decided to use [SvelteKit](https://kit.svelte.dev/) as our front-end framewor
 &nbsp;  
 SvelteKit also has support for back-end functions, which makes creating a separate back-end app unnecessary. This keeps us focussed on building out nice features, without being concerned about authentication throughout both the front-end and back-end.  
 &nbsp;  
-These back-end functions, as well as part of the front-end, interact with our database solution which is [Supabase](https://supabase.io/). Supabase is a database, authentication and cloud file storage solution in one. It has a JavaScript client which packs all these features in a simple-to-use package for us to use in our application.  
-&nbsp;  
+These back-end functions, as well as part of the front-end, interact with our database solution which is [Supabase](https://supabase.io/). Supabase is a database, authentication and cloud file storage solution in one. It has a JavaScript client which packs all these features in a simple-to-use package for us to use in our application.
